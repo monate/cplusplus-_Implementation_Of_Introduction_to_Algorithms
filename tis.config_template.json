@@ -1,0 +1,20 @@
+{
+  "cxx-cpp-extra-args": "-I . '-D itoa(a,b,c)=sprintf(b,\"%d\",a)'",
+  "files": [ "tis/tis_runtime.c", "main.cpp", "src/google_test/gtest-all.cc"],
+  "cxx-std": "gnu++11",
+  "val-timeout": 10800,
+  "filesystem":
+  {
+    "enabled": true,
+    "system_errors": false,
+    "files":
+    [
+      {
+        "name": "/dev/urandom",
+        "size": 1000,
+        "min_val": 42,
+        "max_val": 42
+      }
+    ]
+  }
+}
