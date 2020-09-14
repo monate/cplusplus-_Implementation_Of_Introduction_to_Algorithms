@@ -3,6 +3,7 @@
   "files": [ "tis/tis_runtime.c", "main.cpp", "src/google_test/gtest-all.cc"],
   "cxx-std": "gnu++11",
   "val-timeout": 10800,
+  "cxx-cache-all": true,  
   "filesystem":
   {
     "enabled": true,
